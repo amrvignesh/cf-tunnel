@@ -1,0 +1,7 @@
+tunnel: mrithang-site
+credentials-file: /etc/cloudflared/688209cf-699f-xxxx-xxxx-xxxxxx.json
+
+ingress:
+  - hostname: www.mrithang.com
+    service: http://web:80
+  - service: http_status:404
